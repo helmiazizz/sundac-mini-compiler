@@ -1,0 +1,22 @@
+// =====================================================
+// Conto 3: Larik (array), indeks, fungsi bawaan
+// =====================================================
+
+SIMPEN angka = [12, 5, 8, 21, 3, 17];
+tembongkeun("Larik:", angka);
+tembongkeun("Panjang larik:", panjangna(angka));
+tembongkeun("Nilai pangluhurna:", pangluhurna(angka));
+tembongkeun("Nilai panghandapna:", panghandapna(angka));
+tembongkeun("Jumlah sadayana:", jumlahkeun(angka));
+
+SIMPEN total = 0;
+PIKEUN x DINA angka {
+    total = total + x;
+}
+tembongkeun("Total (ditambahkeun manual):", total);
+
+SIMPEN rata2 = total / panjangna(angka);
+tembongkeun("Rata-rata:", rata2);
+
+angka[0] = 99;
+tembongkeun("Sanggeus diropéa indeks ka-0:", angka);

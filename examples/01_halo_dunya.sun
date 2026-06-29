@@ -1,0 +1,12 @@
+// =====================================================
+// Conto 1: Halo Dunya + Variabel + Aritmatika basajan
+// =====================================================
+
+SIMPEN nami = "Sunda";
+tembongkeun("Wilujeng sumping di SUNDAC,", nami, "!");
+
+SIMPEN umur = 20;
+SIMPEN taun_ayeuna = 2026;
+SIMPEN taun_lahir = taun_ayeuna - umur;
+
+tembongkeun("Lamun umur", umur, "taun, kira-kira lahir taun", taun_lahir);

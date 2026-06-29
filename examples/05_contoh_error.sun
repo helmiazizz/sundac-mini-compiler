@@ -1,0 +1,15 @@
+// =====================================================
+// Conto 5: KHUSUS pikeun mintonkeun Penanganan Error
+// (Semantic Analysis) -- ieu SANGAJA salah, ulah dirobah!
+// Dipake ku demo.sh dina Bagian 6.
+// =====================================================
+
+SIMPEN a = 5;
+tembongkeun(b);          // (1) variabel 'b' teu acan dideklarasikeun
+
+EUREUN;                   // (2) EUREUN/break di luar perulangan
+
+PANCEN tambah(x, y) {
+    BALIKKEUN x + y;
+}
+tembongkeun(tambah(1, 2, 3));   // (3) jumlah argumen teu cocog (3 vs 2)

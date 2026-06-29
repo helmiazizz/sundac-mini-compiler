@@ -1,0 +1,28 @@
+// =====================================================
+// Conto 4: Demo CODE OPTIMIZATION
+//   - Constant Folding
+//   - Dead Code Elimination
+// Jalankeun ku --optimized-ast atawa --pycode pikeun nempo bédana.
+// =====================================================
+
+SIMPEN x = 2 + 3 * 4;          // bakal dilipet (fold) jadi 14 wektu kompilasi
+SIMPEN y = (10 - 4) / 2;       // bakal dilipet jadi 3.0
+
+UPAMA (BENER) {
+    tembongkeun("Blok ieu salawasna dijalankeun (UPAMA BENER disederhanakeun)");
+}
+
+UPAMA (SALAH) {
+    tembongkeun("Ieu moal kungsi dicitak, dibuang ku optimizer");
+} SABALIKNA {
+    tembongkeun("Ieu nu dicitak gantina (sanggeus UPAMA SALAH disederhanakeun)");
+}
+
+PANCEN tes() {
+    BALIKKEUN 1;
+    tembongkeun("Statement ieu teu kahontal (dead code), bakal dibuang");
+}
+
+tembongkeun("x =", x);
+tembongkeun("y =", y);
+tembongkeun("tes() =", tes());

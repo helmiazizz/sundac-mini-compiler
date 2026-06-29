@@ -1,0 +1,41 @@
+// =====================================================
+// Conto 2: PANCEN (fungsi), rekursi, UPAMA/SABALIKNA,
+//          SALILA (while), PIKEUN..DINA (for-in)
+// =====================================================
+
+PANCEN faktorial(n) {
+    UPAMA (n <= 1) {
+        BALIKKEUN 1;
+    }
+    BALIKKEUN n * faktorial(n - 1);
+}
+
+PANCEN prima(n) {
+    UPAMA (n < 2) {
+        BALIKKEUN SALAH;
+    }
+    SIMPEN i = 2;
+    SALILA (i * i <= n) {
+        UPAMA (n % i == 0) {
+            BALIKKEUN SALAH;
+        }
+        i = i + 1;
+    }
+    BALIKKEUN BENER;
+}
+
+SIMPEN angka = 7;
+tembongkeun("Faktorial", angka, "=", faktorial(angka));
+
+UPAMA (prima(angka)) {
+    tembongkeun(angka, "mangrupa wilangan prima.");
+} SABALIKNA {
+    tembongkeun(angka, "lain wilangan prima.");
+}
+
+tembongkeun("Wilangan prima ti 2 nepi ka 30:");
+PIKEUN n DINA wengkuan(2, 31) {
+    UPAMA (prima(n)) {
+        tembongkeun(n);
+    }
+}

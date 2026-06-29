@@ -1,0 +1,3 @@
+# Teu aya dependency runtime nu diperlukeun (Python standard library wungkul).
+# pyinstaller ngan diperlukeun lamun rék ngabangun executable mandiri (installer).
+pyinstaller>=6.0
